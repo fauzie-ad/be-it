@@ -49,6 +49,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+
+//Untuk masuk Admin
+$route['kang_edit'] = 'AdminController/kangedit';
+$route['otentikasi'] = 'AdminController/otentikasi';
+$route['admin/index'] = 'AdminController/templateAdmin';
+
+
+
+//Untuk masuk Home
 $route['default_controller'] = 'HomeController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
